@@ -1,0 +1,36 @@
+{
+  "name": "kodilla-project-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm-run-all test:*",
+    "test:html": "nu-html-checker *.html",
+    
+    "build": "npm-run-all build:*",
+    "build:clean": "rimraf css/*",
+    "build:sass": "node-sass --output-style compact -o css sass",
+    
+    "watch": "npm-run-all build -p watch:*",
+    "watch:browsersync": "browser-sync start --server --files css/*.css *.html",
+    "watch:sassprefixer": "onchange scss/*.scss -- npm-run-all sassprefixer:*",
+    "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css scss",
+    "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starakociara/kodilla-project-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/starakociara/kodilla-project-1/issues"
+  },
+  "homepage": "https://github.com/starakociara/kodilla-project-1#readme",
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "nu-html-checker": "^0.1.0",
+    "rimraf": "^2.6.3"
+  }
+}
