@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,800,900');
 @import 'variables';
 @import 'mixins';
 @import 'normalize';
@@ -5,10 +6,5 @@
 @import 'grid';
 
 /* Components */
-@import 'components/form_filed';
-
-/* Sections */
-@import 'section/registration_form';
-
-/* Pages / Views */
-@import 'pages/registration';
+@import 'components/sidebar';
+@import 'components/header';
