@@ -11,10 +11,10 @@
     "build:sass": "node-sass --output-style compact -o css sass",
     "watch": "npm-run-all build -p watch:*",
     "watch:browsersync": "browser-sync start --server --files css/*.css *.html",
-    "watch:sassprefixer": "onchange scss/*.scss -- npm-run-all sassprefixer:*",
-    "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css scss",
+    "watch:sassprefixer": "onchange sass/style.scss -- npm-run-all sassprefixer:*",
+    "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css"
-  },
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/starakociara/kodilla-project-1.git"
