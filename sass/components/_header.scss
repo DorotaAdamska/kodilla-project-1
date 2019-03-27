@@ -1,16 +1,15 @@
 .header {
     min-height: 60px;
     width: 100%;
-
     
     .navigation-header {
         display: flex;
         justify-content: flex-end;
         align-items:center;
         list-style-type: none;
-        margin-block-start: 0;
+        margin: 0;
+        color: $font-color;
         border-bottom: 2px solid $grey-color;
-
 
         li {
             border-left: 2px solid $grey-color;
@@ -19,31 +18,32 @@
             align-items:center;
             padding: 0 10px;
             min-height: 50px;
-
-        
-
-            .wallet, .profile, .notification {
+            }
+            
+            a {
+                width: 100%;
                 display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            img {
-                height: 15px;
-                padding: 0 20px;
-                filter: invert(0.5);
-            }
-            
-            p {
+                justify-content: left;
                 font-size: 0.8em;
-                padding-left: 10px;
+                padding: 0 10px;
+                color: $font-color;
+                text-decoration: none;
+                font-weight: lighter;
+                &::before {
+                    margin: 0 10px;
+                }
             }
-
-
             
-            
-        }
-
+            .notification-indicator {
+                background-clip: padding-box;
+                background-color: $orange-color;
+                border: none;
+                border-radius: 50%;
+                height: 6px;
+                width: 6px;
+                position: absolute;
+                margin: -5px 0 0 -20px;
+            }
         }
     }
 

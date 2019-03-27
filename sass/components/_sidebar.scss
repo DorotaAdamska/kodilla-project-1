@@ -1,29 +1,29 @@
 .sidebar {
     height: 100%;
-    min-width: 200px; 
+    width: 250px; 
     position: fixed;
     z-index: 1; 
     top: 0; 
     left: 0;
-    background-color: #000; 
+    background-color: #191919; 
     overflow-x: hidden; 
 
     .sidebar-header {
-        height: 30px;
-        padding: 10px 10px 20px 10px;
+        min-height: 30px;
+        padding: 10px 20px;
     
         img {
             text-align: left;
-            height: 25px;
-            padding: 2px 0;
+            height: 24px;
+            padding: 10px;
         }
         
         .hamburger {
             float: right;
             cursor: pointer;
-            padding: 5px 10px;
+            padding: 10px;
 
-            .bar1, .bar2, .bar3 {
+            .bar {
                 width: 25px;
                 height: 3px;
                 background-color: #fff;
@@ -34,47 +34,70 @@
     }
 
     .sidenav {
-        display: -webkit-flex;
-        display: flex;
-        flex-direction: column;
-
-        li {
-            display: inline-flex;
-            justify-content: flex-start;
-        }
-
-        img {
-            display: flex;
-            max-height: 15px;
-            padding: 1em;
-            filter: invert(0.5);
-            align-items: center;
-            position: relative;
-            float: left;
-            &:hover {
-                filter: invert(1);
-            }
-        }
-
+        margin: 0;
+        padding: 5px 0 40px 0;
+        
         a {
+            width: 100%;
             display: flex;
             padding: 0.8em;
             justify-content: left;
             text-decoration: none;
             font-weight: lighter;
-            color: #7f7f7f;
+            color: #7F7F7F;
+            border-left: 4px solid #191919;
             &:hover {
-                background-color: #7f7f7f;
-                color: #fff;
+            background-color: #7F7F7F;
+            color: #FFF;
+            border-left: 4px solid orange;
+            }
+            &::before {
+            margin: 0 20px 0 10px;
             }
         }
+    }
 
+    .manager {
+        padding: 30px 20px;           
+        border-top: 2px solid #333333;
 
+        h2 {
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            font-size: 1em;
+            color: $font-color;
+            font-weight: normal;
         }
 
+        .manager-foto {
+            width: 100%;
+            padding: 25px 0;
+            display: flex;
+            justify-content: left;
+
+            .status-indicator {
+            background-clip: padding-box;
+            background-color: #04ae00;
+            border: none;
+            border-radius: 50%;
+            height: 14px;
+            position: absolute;
+            width: 14px;
+            margin: 0px -5px 0 55px;
             }
-        
-        
-            
-        
-        
+
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 50%;
+                padding: 0 20px;
+            }
+
+            p {
+                color: $links-color;
+            }
+        }
+    }
+}

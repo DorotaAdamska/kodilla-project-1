@@ -14,7 +14,7 @@
     "watch:sassprefixer": "onchange sass/style.scss -- npm-run-all sassprefixer:*",
     "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/starakociara/kodilla-project-1.git"
@@ -37,4 +37,4 @@
     "onchange": "^5.2.0",
     "rimraf": "^2.6.3"
   }
-}
+  }
