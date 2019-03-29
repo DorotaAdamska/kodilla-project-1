@@ -273,3 +273,19 @@ h2 { color: #9c9c9c; text-transform: uppercase; font-size: 1.2em; font-weight: n
 .inner-container .box-container .chart-buttons .active p { color: #496c84; }
 
 .inner-container .box-container .chart { display: flex; justify-content: center; padding: 30px 0; }
+
+.links { padding: 10px 20px 20px 270px; }
+
+.links .box-container .add-button { display: flex; justify-content: center; padding: 20px 0; }
+
+.links .box-container .add { border: none; border-radius: 5%; background-color: #f58220; color: #fff; padding: 10px 20px; }
+
+.links .box-container .links-table { display: flex; justify-content: center; }
+
+.links .box-container .links-table table { padding: 0; border-spacing: 0; border-collapse: separate; border-top: 2px solid #e3e3e3; }
+
+.links .box-container .links-table table td { border-bottom: 2px solid #e3e3e3; }
+
+.links .box-container .links-table table td p { padding-right: 200px; }
+
+.links .box-container .links-table table td a { padding-right: 150px; text-decoration: none; color: #496c84; }

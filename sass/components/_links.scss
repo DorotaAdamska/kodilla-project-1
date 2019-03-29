@@ -1,0 +1,46 @@
+.links {
+    padding: 10px 20px 20px 270px;
+    
+    .box-container {
+
+        .add-button {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+    
+        .add {
+            border: none;
+            border-radius: 5%;
+            background-color: $orange-color;
+            color: #fff;
+            padding: 10px 20px;
+         }
+
+        .links-table {
+            display: flex;
+            justify-content: center;
+            
+            table {
+                padding: 0;
+                border-spacing: 0;
+                border-collapse: separate;
+                border-top: 2px solid $grey-color;
+
+                td {
+                    border-bottom: 2px solid $grey-color;
+
+                    p {
+                        padding-right: 200px;
+                    }
+
+                    a {
+                        padding-right: 150px;
+                        text-decoration: none;
+                        color: $links-color;
+                    }
+                }
+            }
+        }
+    }
+}
