@@ -1,7 +1,35 @@
 body {
     font-family: $font;
+    background-color:$body-color;
+
 }
 
-p {
+
+p, h1, h3 {
     color: $font-color;
+}
+
+h2 {
+    color: $font-color;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0px;
+    padding: 10px;
+}
+
+.container {
+    width: 100wv;
+    padding: 80px 20px 20px 270px;
+
+    .inner-container {
+        width: 100%;
+        height: 100%;
+        border: 2px solid $grey-color;
+        background-color: #fff;     
+    
+        .box-container {
+            padding: 30px 100px;
+        }
+    }
 }

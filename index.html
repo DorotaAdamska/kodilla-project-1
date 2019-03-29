@@ -62,12 +62,69 @@
                     <a class="icon-notification" href="#"></a>
                 </li>
                 <li class="profile">
-                    <a class="icon-profile" href="#">Leonardo Dicaprio</a>
+                    <span class="icon-profile"></span>
+                    <a href="#">Leonardo Dicaprio</a>
                 </li>
                 <li class="quit">
                     <span class="icon-quit"></span>
                 </li>
             </ul>
         </nav>
+
+        <!-- General statistic -->
+        <div class="container">
+            <div class="inner-container">
+                <h2>GENERAL STATISTIC</h2>
+                <div class="date">
+                    <input type="date" id="start" name="statictic-start"
+                    value="2016-05-16" min="2018-01-01" max="2018-12-31" class="date-start">
+                    <input type="date" id="start" name="statictic-start"
+                    value="2016-05-16" min="2018-01-01" max="2018-12-31" class="date-end">
+                    <button class="icon-refresh"></button>
+                </div>
+                <div class="box-container">
+                    <div class="statistic-table">
+                        <table>
+                            <tr>
+                                <td class="left-column"><a href="#">Visit Signups</a></td>
+                                <td><p>124</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left-column"><a href="#">FTD</a></td>
+                                <td><p>445</p></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td class="left-column"><a href="#">Net deposit</a></td>
+                                <td><p>654</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left-column"><a href="#">Turn over</a></td>
+                                <td><p>432</p></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Earnings chart</p>
+                    <div class="chart-buttons">
+                        <button class="inactive">
+                            <span class="blue-dot"></span>
+                            <p>Signups</p>
+                        </button>
+                        <button class="inactive">
+                            <span class="orange-dot"></span>
+                            <p>FTD</p>
+                        </button>
+                        <button class="active">
+                            <span class="green-dot"></span>
+                            <p>Earned</p>
+                        </button>
+                    </div>
+                    <div class="chart">
+                        <img src="images/chart.png" alt="chart">
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

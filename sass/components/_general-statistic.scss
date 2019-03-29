@@ -1,0 +1,115 @@
+.inner-container {
+    
+    h2 {
+        border-bottom: 2px solid $grey-color;
+    }
+
+    .date {
+        display: flex;
+        justify-content: center; 
+        padding: 30px 0;
+        border-bottom: 2px solid $grey-color;
+
+        
+        input {
+            height: 2em;
+        }
+
+        .icon-refresh {
+            margin: 0 10px;
+            background-color: $orange-color;
+            border-radius: 10%;
+            color: #fff;
+            &::before {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .box-container {
+    
+        .statistic-table {
+            display: flex;
+            justify-content: space-between;
+
+            table {
+                padding: 0px 0 60px 0;
+                border-spacing: 0;
+                border-collapse: separate;
+
+
+                td {
+                    border-bottom: 2px solid $grey-color;
+                }
+
+                .left-column {
+                        padding: 0 300px 0 0;
+                    }
+                    
+                a {
+                    color: $font-color;
+                    text-decoration: none;
+                }
+
+                p {
+                color: #000;
+                text-align: right;
+                }
+            }
+        }
+        
+        .chart-buttons {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+        
+            button {
+                padding: 0 15px;
+                margin: 0 20px;
+            }
+            .inactive {
+                border: none;
+                border-radius: 5%;
+                background-color: $body-color;
+                display: flex;
+                justify-content: center;
+
+                .blue-dot {
+                    @include dot;
+                    background-color: #80bfca;
+                }
+
+                .orange-dot {
+                    @include dot;
+                    background-color: $orange-color;
+                }
+            }
+    
+            .active {
+                border: none;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+
+                .green-dot {
+                    @include dot;
+                    background-color: #04ae00;
+                }
+
+                p {
+                    color: $links-color;
+                }
+            }
+        }
+
+        .chart {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+        }
+    }
+}
+    
+            
+        
