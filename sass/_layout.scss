@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: $font;
     background-color:$body-color;
@@ -9,17 +13,22 @@ p, h1, h3 {
     color: $font-color;
 }
 
+p, a {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
 h2 {
     color: $font-color;
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: normal;
     margin: 0px;
     padding: 10px;
 }
 
 .container {
-    padding: 80px 20px 20px 270px;
+    padding: 80px 20px 20px 220px;
 
     .inner-container {
         width: 100%;
@@ -30,6 +39,20 @@ h2 {
     
         .box-container {
             margin: 30px 100px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 50px 20px 20px 20px;
+
+        .inner-container {
+    
+            .box-container {
+                margin: 30px 50px;
+            }
         }
     }
 }

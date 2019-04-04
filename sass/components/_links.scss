@@ -12,32 +12,62 @@
             background-color: $orange-color;
             color: #fff;
             padding: 10px 20px;
+            cursor: pointer;
          }
 
         .links-table {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             
             table {
                 padding: 0;
                 border-spacing: 0;
-                border-collapse: separate;
+                border-collapse: collapse;
                 border-top: 2px solid $grey-color;
 
-                td {
+                tr {
                     border-bottom: 2px solid $grey-color;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    &:hover {
+                        background-color: $grey-color;
+                        cursor: pointer;
 
-                    p {
-                        padding-right: 200px;
+                        .icons-operations {
+                            opacity: 1;
+                        }
                     }
 
-                    a {
-                        padding-right: 150px;
-                        text-decoration: none;
-                        color: $links-color;
+                }                
+                    td {
+                        width: 300px;
+    
+                        p {
+                            margin-left: 15px;
+                        }
+                        
+                        a {
+                            text-decoration: none;
+                            color: $links-color;
+                            font-weight: normal;
+                            margin-left: 15px;
+                        }
+                    }
+                    .icons-operations {
+                        width: 80px;
+                        opacity: 0;
+                        
+                       .icon-links {
+                           &::before {
+                               margin: 0 5px 0 0;
+                               color: $orange-color;
+                           }
+                       }
                     }
                 }
             }
-        }      
-    }
+}
+
 

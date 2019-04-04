@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>My first webpage</title>
+        <title>Dashboard</title>
     </head>
 
     <body>
@@ -39,7 +39,7 @@
                 </li>
                     <li>
                     <a class="icon-postback" href="#">Postback</a>
-                    </li>
+                </li>
             </ul>
             <div class="manager">
                 <h2>Your manager</h2>
@@ -49,6 +49,25 @@
                     <p>Michael E.</p>
                 </div>
             </div>
+            <div class="header-menu">
+                <ul class="navigation-header">
+                    <li class="wallet">
+                        <a class="icon-wallet" href="#">$1.500,00</a>
+                        <a class="icon-arrow-down-small" href="#"></a>
+                    </li>
+                    <li class="notification">
+                        <span class="notification-indicator"></span>
+                        <a class="icon-notification" href="#"></a>
+                    </li>
+                    <li class="profile">
+                        <span class="icon-profile"></span>
+                        <a href="#">Leonardo Dicaprio</a>
+                    </li>
+                    <li class="quit">
+                        <span class="icon-quit"></span>
+                    </li>
+                </ul>
+            </nav>
         </nav>
 
         <!-- Header -->
@@ -71,17 +90,20 @@
                 </li>
             </ul>
         </nav>
-
+        
         
         <div class="container">
         <!-- General statistic -->
             <div class="inner-container">
                 <h2>GENERAL STATISTIC</h2>
                 <div class="date">
-                    <input type="date" id="start" name="statictic-start"
-                    value="2016-05-16" min="2018-01-01" max="2018-12-31" class="date-start">
-                    <input type="date" id="start" name="statictic-start"
-                    value="2016-05-16" min="2018-01-01" max="2018-12-31" class="date-end">
+                    <div class="date-picker">
+                        <input class="start-date" type="date" id="start" name="statictic-start"
+                        value="2016-05-16" min="2018-01-01" max="2018-12-31" class="date-start">
+                        <input type="date" id="start" name="statictic-start"
+                        value="2016-05-16" min="2018-01-01" max="2018-12-31" class="date-end">
+                        <span class="icon-calendar"></span>
+                    </div>
                     <button class="icon-refresh"></button>
                 </div>
                 <div class="box-container">
@@ -108,22 +130,9 @@
                         </table>
                     </div>
                     <p>Earnings chart</p>
-                    <div class="chart-buttons">
-                        <button class="inactive">
-                            <span class="blue-dot"></span>
-                            <p>Signups</p>
-                        </button>
-                        <button class="inactive">
-                            <span class="orange-dot"></span>
-                            <p>FTD</p>
-                        </button>
-                        <button class="active">
-                            <span class="green-dot"></span>
-                            <p>Earned</p>
-                        </button>
-                    </div>
                     <div class="chart">
-                        <img src="images/chart.png" alt="chart">
+                        <div id="myChartLegend"></div>
+                        <canvas id="myChart"></canvas>
                     </div>
                 </div>
             </div>
@@ -140,42 +149,62 @@
                                 <tr >
                                     <td><p>Home page</p></td>
                                     <td><a href="#">http://www.homepage.com</a></td>
+                                    <td class="icons-operations"><a class="icon-links" href="#"></a>
+                                    <a class="icon-trash" href="#"></a></td>
                                 </tr>
                                 <tr>
                                     <td><p>Currently offer</p></td>
                                     <td><a href="#">http://www.currently.com</a></td>
+                                    <td class="icons-operations"><a class="icon-links" href="#"></a>
+                                    <a class="icon-trash" href="#"></a></td>
                                 </tr>
                                 <tr>
                                     <td><p>Bluprix</p></td>
                                     <td><a href="#">http://www.bluprix.com</a></td>
+                                    <td class="icons-operations"><a class="icon-links" href="#"></a>
+                                    <a class="icon-trash" href="#"></a></td>
                                 </tr>
                                 <tr>
                                     <td><p>Your site</p></td>
                                     <td><a href="#">http://www.yoursite.com</a></td>
+                                    <td class="icons-operations"><a class="icon-links" href="#"></a>
+                                    <a class="icon-trash" href="#"></a></td>
                                 </tr>
                                 <tr>
                                     <td><p>Google</p></td>
                                     <td><a href="#">http://www.google.com</a></td>
+                                    <td class="icons-operations"><a class="icon-links" href="#"></a>
+                                    <a class="icon-trash" href="#"></a></td>
                                 </tr>
                                 <tr>
                                     <td><p>Facebook</p></td>
                                     <td><a href="#">http://www.facebook.com</a></td>
+                                    <td class="icons-operations"><a class="icon-links" href="#"></a>
+                                    <a class="icon-trash" href="#"></a></td>
                                     </tr>
                                 <tr>
                                     <td><p>Dashboard</p></td>
                                     <td><a href="#">http://www.dashboard.com</a></td>
+                                    <td class="icons-operations"><a class="icon-links" href="#"></a>
+                                    <a class="icon-trash" href="#"></a></td>
                                 </tr>
                                 <tr>
                                     <td><p>Blurax</p></td>
                                     <td><a href="#">http://www.blurax.com</a></td>
+                                    <td class="icons-operations"><a class="icon-links" href="#"></a>
+                                    <a class="icon-trash" href="#"></a></td>
                                 </tr>
                                 <tr>
                                     <td><p>Piece of Wine</p></td>
                                     <td><a href="#">http://www.pieceofwine.com</a></td>
+                                    <td class="icons-operations"><a class="icon-links" href="#"></a>
+                                    <a class="icon-trash" href="#"></a></td>
                                 </tr>
                                 <tr>
                                     <td><p>Twitter</p></td>
                                     <td><a href="#">http://www.twitter.com</a></td>
+                                    <td class="icons-operations"><a class="icon-links" href="#"></a>
+                                    <a class="icon-trash" href="#"></a></td>
                                 </tr>
                             </table>
                         </div>
@@ -184,7 +213,9 @@
                         </div>
                     </div>
                 </div>
-            
+            </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
