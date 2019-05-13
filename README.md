@@ -1,1 +1,1 @@
-# https://starakociara.github.io/kodilla-project-1/
+# https://DorotaAdamska.github.io/kodilla-project-1/
